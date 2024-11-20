@@ -1,0 +1,428 @@
+kubem01
+##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+--------------------------------------------------------------
+kubem01a
+##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------
+kubem02a
+##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+  ----------------------------------------------------
+kubem03a
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+   ----------------------------------------------------
+kubesym01
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+   ----------------------------------------------------
+kubesym02
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+   ----------------------------------------------------
+kubesym03
+   
+  ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+kubesym01a
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+kubesym02a
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+kubesym03a
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+kubesym04a
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+kubesym05a
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+kubesym06a
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lm03
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv1-syssupport01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubedat01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubedat02
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubedat03
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubeinf01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubem01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubesym01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubesym02
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-kubesym03
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+ lv2-syslog01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv2-syssupport01
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv3-kubedat01
+          ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv3-kubedat02
+          ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv3-kubedat03
+          ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+lv3-kubem01
+##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+--------------------------------------------------------------
+lv3-kubesym01
+##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------
+lv3-kubesym02
+##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+  ----------------------------------------------------
+lv3-kubesym03
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+   ----------------------------------------------------
+lv3-syslog01
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+   ----------------------------------------------------
+lv3-syssupport01
+ ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   
+   ----------------------------------------------------
+mfgbootstrap01
+   
+  ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+mfgdns01a
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+mfgdns01b
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+mfgkclog01
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+mfgkubedat01
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+mfgkubedat02
+    ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   --------------------------------------------------------
+mfgkubedat03
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+mfgkubem01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+mfgkuberw01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+mfgkubesym01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+mfgsyssupport01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+mfsyslog01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+prescient01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+Repo02-centos7
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+SNMP-V3-TESTVM
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+syssupport01
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+syssupport02
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------
+yum-repo-client
+       ##############Parameter Existence##############
+grep -v ^# /etc/systemd/system.conf
+[Manager]
+##############service masked status##############
+systemctl status ctrl-alt-del.target | grep -i Loaded
+   Loaded: loaded (/usr/lib/systemd/system/reboot.target; disabled; vendor preset: disabled)
+   -------------------------------------------------------

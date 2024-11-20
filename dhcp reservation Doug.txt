@@ -1,0 +1,271 @@
+
+diff /etc/dhcp/reservation/vlan-68.conf /etc/dhcp/reservation/backup/vlan-68.conf.HMNC-77
+------------------------------------------------------------------------------------------
+cp /etc/dhcp/reservation/vlan-68.conf /etc/dhcp/reservation/backup/vlan-68.conf.04162024
+
+cp /etc/dhcp/reservation/backup/vlan-68.conf.HMNC-77 /etc/dhcp/reservation/vlan-68.conf
+
+systemctl restart dhcpd
+
+systemctl status dhcpd
+----------------------------------
+jumpbox CMD:
+
+ping fire1 -t
+ping fire2 -t
+telnet fire1
+
+====Reboot fire alarm========
+
+ipconfig /flushdns
+
+Ask T2 to confirm that the bot accounts show as healthy and post screen shot in ticket.
+----------------------------------
+nslookup fire1
+nslookup fire2
+nslookup act00001.mservices.wmtusnchpm01.symbotic
+nslookup act00002.mservices.wmtusnchpm01.symbotic
+nslookup act00003.mservices.wmtusnchpm01.symbotic
+nslookup act00004.mservices.wmtusnchpm01.symbotic
+nslookup act00005.mservices.wmtusnchpm01.symbotic
+nslookup act00013.mservices.wmtusnchpm01.symbotic
+nslookup act00014.mservices.wmtusnchpm01.symbotic
+
+-----------------------------------------------
+C:\Users\puneet_kumar>nslookup fire1
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    Fire-3547C7.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.15
+Aliases:  fire1.services.symbotic
+
+
+C:\Users\puneet_kumar>nslookup fire2
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    Fire-34EE8E.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.25
+Aliases:  fire2.services.symbotic
+
+
+C:\Users\puneet_kumar>nslookup act00001.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00001.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.21
+
+
+C:\Users\puneet_kumar>nslookup act00002.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00002.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.17
+
+
+C:\Users\puneet_kumar>nslookup act00003.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00003.mservices.wmtusnchpm01.symbotic
+Address:  172.17.68.35
+
+
+C:\Users\puneet_kumar>nslookup act00004.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00004.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.16
+
+
+C:\Users\puneet_kumar>nslookup act00005.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00005.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.23
+
+
+C:\Users\puneet_kumar>nslookup act00013.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00013.mservices.wmtusnchpm01.symbotic
+Address:  172.17.68.33
+
+
+C:\Users\puneet_kumar>nslookup act00014.mservices.wmtusnchpm01.symbotic
+Server:  dns01a.itsvc.wmtusnchpm01.symbotic
+Address:  172.17.34.10
+
+Name:    act00014.mservices.wmtusnchpm01.symbotic
+Address:  172.17.69.19
+
+
+C:\Users\puneet_kumar>
+======================================================================================
+[root@dns01a ~]# diff /etc/dhcp/reservation/vlan-68.conf /etc/dhcp/reservation/backup/vlan-68.conf.HMNC-77
+0a1,9
+> host    fire1         { hardware ethernet  e8:eb:1b:35:47:c7; fixed-address 172.17.68.51; }
+> host    fire2         { hardware ethernet  e8:eb:1b:34:ee:8e; fixed-address 172.17.68.52; }
+> host    act00001         { hardware ethernet  04:91:62:db:54:e8; fixed-address 172.17.68.61; }
+> host    act00002         { hardware ethernet  04:91:62:da:da:47; fixed-address 172.17.68.62; }
+> host    act00003         { hardware ethernet  04:91:62:da:df:74; fixed-address 172.17.68.63; }
+> host    act00004         { hardware ethernet  04:91:62:db:65:84; fixed-address 172.17.68.64; }
+> host    act00005         { hardware ethernet  04:91:62:db:09:b0; fixed-address 172.17.68.65; }
+> host    act00013         { hardware ethernet  04:91:62:db:1a:3b; fixed-address 172.17.68.73; }
+> host    act00014         { hardware ethernet  04:91:62:db:36:59; fixed-address 172.17.68.74; }
+[root@dns01a ~]#
+=============================================
+Ask T2 or SAS to restart the Bot Accountants
+
+Reboot the Fire Alarms
+Open two command prompts in windows.
+Start a running ping to Fire Alarm 1 in command window 1
+- ping fire1.servies.symbotic -t
+Telnet to Fire Alarm 1 in command window 2
+- telnet fire1.serviecs.symbotic
+Reboot the fire alarm from the command line
+- reboot
+Watch the pings in command window 1 and verify that the Fire Alarm rebooted. When
+Fire Alarm 1 pings again telnet back out to it to confirm that it is back up.
+
+Since the IP will change for the Fire Alarm, you may need to flush the DNS Cache to reconnect.
+From an admin windows prompt on the jump server flush the DNS
+- ipconfig /flushdns
+
+When Fire Alarm 1 is done, repeat this process for Fire Alarm 2
+Start a running ping to Fire Alarm 2 in command window 1
+- ping fire1.servies.symbotic -t
+Telnet to Fire Alarm 2 in command window 2
+- telnet fire1.serviecs.symbotic
+Reboot the fire alarm from the command line
+- reboot
+Watch the pings in command window 1 and verify that the Fire Alarm rebooted. When
+Fire Alarm 2 pings again telnet back out to it to confirm that it is back up.
+
+Since the IP will change for the Fire Alarm, you may need to flush the DNS Cache to reconnect.
+From an admin windows prompt on the jump server flush the DNS
+- ipconfig /flushdns
+
+When the changes are complete, before you start validation flush the DNS Cache on the jump server and sre01
+From an admin windows prompt on the jump server flush the DNS
+- ipconfig /flushdns
+
+Validations
+1. Validate DNS for all devices. Do an nslookup for each device and it should return it's new IP
+fire1.services.symbotic should return 172.17.68.51
+fire2.services.symbotic should return 172.17.68.52
+act00001.mservices.symbotic should return 172.17.68.61
+act00002.mservices.symbotic should return 172.17.68.62
+act00003.mservices.symbotic should return 172.17.68.63
+act00004.mservices.symbotic should return 172.17.68.64
+act00005.mservices.symbotic should return 172.17.68.65
+act00013.mservices.symbotic should return 172.17.68.73
+act00014.mservices.symbotic should return 172.17.68.74
+
+Post Screen shots in the ticket. (See https://symbotic.atlassian.net/browse/GRC-2306 for example screen shots)
+
+2. Ping each device to validate that they are up
+
+3. Ask T2 to confirm that the bot accounts show as healthy and post screen shot in ticket.
+
+
+When Validation is complete resume the system.
+
+
+
+Test Plan:
+ping bot accountants and fire alarm by the reserved ip address and DNS name
+verify DNS record for master-act
+SAS team connect to BAs and confirm bots are getting affiliated to master and worker
+T2 verify telnet access to fire alarm using the reserved IPs.
+T2 verify fire alarm DNS records are resolving at SRE and can ping fire1 and fire2 from SRE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

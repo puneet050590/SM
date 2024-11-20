@@ -1,0 +1,108 @@
+net-snmp-create-v3-user -ro -A UVEydo1o6kwpX2Ir -X AWN7o82mB11nX6gU -a SHA -x AES lm_snmp_svc ===== CORP IT
+net-snmp-create-v3-user -ro -A kuQLyLWeEUrIudPD -X bt77ciBckk7ctjek -a SHA -x AES lm_snmp_svc ===== ALB MP
+net-snmp-create-v3-user -ro -A 45NQBN2fH7Nacd57 -X J657aXzhUtShWWNy -a SHA -x AES lm_snmp_svc ===== Doug
+net-snmp-create-v3-user -ro -A 3VoUMe0YpIS4CF9i -X aZLH49Hq77G2tLLZ -a SHA -x AES lm_snmp_svc ===== BRK 2.0
+net-snmp-create-v3-user -ro -A 6htG4HMypnXR6R69 -X v84HxbyqYp3CkC4M -a SHA -x AES lm_snmp_svc ===== MNM
+net-snmp-create-v3-user -ro -A 3VoUMe0YpIS4CF9i -X aZLH49Hq77G2tLLZ -a SHA -x AES lm_snmp_svc ===== BRK 2.5
+net-snmp-create-v3-user -ro -A Ex9rxbQHHUxY7ezd -X sKSQu6h2b4Una2kx -a SHA -x AES lm_snmp_svc ===== MIDWAY
+net-snmp-create-v3-user -ro -A EKZBhwYWquRJ9623 -X ag7Rw9acD9QpQBcC -a SHA -x AES lm_snmp_svc ===== GRC
+net-snmp-create-v3-user -ro -A sOSe6qg8DVv4GZmsCQli -X S7EQCz5C8tiS71UJValv -a SHA -x AES lm_snmp_svc ===== NBF
+net-snmp-create-v3-user -ro -A mzDqxfY6BSJU5KBY -X AHaCjDW596kE56yy -a SHA -x AES lm_snmp_svc ===== PAL
+net-snmp-create-v3-user -ro -A Cv9m6j9nupDSBUWQ -X UDSVtAXah8vwM85U  -a SHA -x AES lm_snmp_svc  === IRV
+----------------------------------------------------------------
+AuthPass:DRjHxKdQd7Wa33yR
+PrivPass:6qNR8C68y6GP6hDM
+net-snmp-create-v3-user -ro -A DRjHxKdQd7Wa33yR -X 6qNR8C68y6GP6hDM -a SHA -x AES lm_snmp_svc
+-------------------------------------------------------------
+tgt-woodland
+SNMP - v2c - fDYvY1NO5FwpUO3w&Un3  Logic Monitor SNMP - v2c - 6V5A3N8nwjsFmgo!xIuvhWiogHsK#17l    
+---- SNMP v3 lm_snmp_svc  Authpass: 90Do$iB6EeKRGaf5085ODuuaVqZJwV%L  Privpass:  N*93CaQg8QwfVCkRHe8c80iZcYF#CprO
+-------------------------------------------------------------
+ALB-TOL
+Authpass - hdfCcZOSY4wIFiok
+Privpass - 2tClum5MsXRLucWI
+net-snmp-create-v3-user -ro -A hdfCcZOSY4wIFiok -X 2tClum5MsXRLucWI -a SHA -x AES lm_snmp_svc
+-------------------------------------------------------------
+Beth
+Authpass - Y0uIH49SwJCXDLSG
+Privpass - 2lIRqHQxwc4yJsM3
+net-snmp-create-v3-user -ro -A Y0uIH49SwJCXDLSG -X 2lIRqHQxwc4yJsM3 -a SHA -x AES lm_snmp_svc
+for SSH: lmcollect_svc
+passwd:yEPDf2Jfw@#29Ru#13*GtczFh%vaXR0#
+-------------------------------------------------------------
+Gt site
+Authpass - 6GMBZGbqymXmCjUh
+Privpass - kBb2PE3Bqj8niC95
+net-snmp-create-v3-user -ro -A 6GMBZGbqymXmCjUh -X kBb2PE3Bqj8niC95 -a SHA -x AES lm_snmp_svc
+-------------------------------------------------------------
+=============================================
+BRH
+AuthPasss:SHtnnkmmkp5SMf53
+PrivPass:E2Azya9fK5WNkpbY
+net-snmp-create-v3-user -ro -A SHtnnkmmkp5SMf53 -X E2Azya9fK5WNkpbY -a SHA -x AES lm_snmp_svc
+============================================
+Marcy
+Auth Pass:5tGoHalg4PAhfn3t
+Priv Pass:z8ESr36NKIXsE4O2
+net-snmp-create-v3-user -ro -A 5tGoHalg4PAhfn3t -X z8ESr36NKIXsE4O2 -a SHA -x AES lm_snmp_svc
+======================================================================================================================
+SNMP
+
+yum list installed | grep snmp
+yum install net-snmp net-snmp-utils -y
+yum list installed | grep snmp
+
+[root@kubem02a ~]# yum list installed | grep snmp
+Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast
+net-snmp.x86_64                       1:5.7.2-49.el7_9.2             @updates
+net-snmp-agent-libs.x86_64            1:5.7.2-49.el7_9.2             @updates
+net-snmp-libs.x86_64                  1:5.7.2-49.el7_9.2             @updates
+net-snmp-utils.x86_64                 1:5.7.2-49.el7_9.2             @updates
+
+
+systemctl stop snmpd
+yum list installed | grep snmp
+systemctl status snmpd 
+
+net-snmp-create-v3-user -ro -A UVEydo1o6kwpX2Ir -X AWN7o82mB11nX6gU -a SHA -x AES lm_snmp_svc
+net-snmp-create-v3-user -ro -A kuQLyLWeEUrIudPD -X bt77ciBckk7ctjek -a SHA -x AES lm_snmp_svc ===== ABL MP
+net-snmp-create-v3-user -ro -A 45NQBN2fH7Nacd57 -X J657aXzhUtShWWNy -a SHA -x AES lm_snmp_svc ===== Doug
+net-snmp-create-v3-user -ro -A 3VoUMe0YpIS4CF9i -X aZLH49Hq77G2tLLZ -a SHA -x AES lm_snmp_svc ===== BRK 2.0
+net-snmp-create-v3-user -ro -A 6htG4HMypnXR6R69 -X v84HxbyqYp3CkC4M -a SHA -x AES lm_snmp_svc ===== MNM
+net-snmp-create-v3-user -ro -A 3VoUMe0YpIS4CF9i -X aZLH49Hq77G2tLLZ -a SHA -x AES lm_snmp_svc ===== BRK 2.5
+net-snmp-create-v3-user -ro -A Ex9rxbQHHUxY7ezd -X sKSQu6h2b4Una2kx -a SHA -x AES lm_snmp_svc ===== MIDWAY
+net-snmp-create-v3-user -ro -A EKZBhwYWquRJ9623 -X ag7Rw9acD9QpQBcC -a SHA -x AES lm_snmp_svc ===== GRC
+net-snmp-create-v3-user -ro -A sOSe6qg8DVv4GZmsCQli -X S7EQCz5C8tiS71UJValv -a SHA -x AES lm_snmp_svc ===== NBF
+net-snmp-create-v3-user -ro -A mzDqxfY6BSJU5KBY -X AHaCjDW596kE56yy -a SHA -x AES lm_snmp_svc ===== PAL
+net-snmp-create-v3-user -ro -A 5tGoHalg4PAhfn3t -X z8ESr36NKIXsE4O2 -a SHA -x AES lm_snmp_svc  ===== Marcy
+net-snmp-create-v3-user -ro -A DRjHxKdQd7Wa33yR -X 6qNR8C68y6GP6hDM -a SHA -x AES lm_snmp_svc  =====  Hermiston
+systemctl status snmpd
+tail -n 5 /etc/snmp/snmpd.conf
+
+systemctl status firewalld
+systemctl status iptables
+
+firewall-cmd --zone=public --add-port=161/udp --permanent
+firewall-cmd --reload
+
+in rare cases we can found iptables running and firewalld stopped then we need to add rule to input chain. 
+
+iptables -I INPUT -p udp -m udp --dport 161 -j ACCEPT
+getenforce   
+setenforce 0	==> if status is not permissive
+
+firewall-cmd --list-all --zone="public"
+
+systemctl status snmpd
+systemctl start snmpd
+systemctl enable snmpd 
+systemctl status snmpd
+netstat -tunlp | grep 161
+iptables -L | grep snmp
+iptables -L | grep snmp*
+iptables -L | grep 161
+iptables -L
+exit
+====================================================================================
+ftServer#1
+

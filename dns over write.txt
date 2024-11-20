@@ -1,0 +1,85 @@
+CR Steps
+1. Pause the System
+2. Login to dns01a
+2. make a backup of /etc/dhcp/dhcpd.conf
+- cp /etc/dhcp/dhcpd.conf /etc/dhcp/backup/dhcpd.conf.01.07.2024
+- cp /etc/dhcp/backup/dhcpd.conf.tol-3909 /etc/dhcp/dhcpd.conf
+4. Restart dhcpd
+- systemctl restart dhcpd
+5. Validate changes.
+6. Power off dns01a
+7. edit the vm settings and increase the CPUs to 4 and memory to 8GB
+8. Power on the VM.
+9. Validate that named, dhcpd, postfix and tftp are up and running.
+
+
+================
+Pre-checks:
+
+systemctl status dhcpd
+systemctl status named 
+systemctl status postfix
+systemctl status tftpd
+diff /etc/dhcp/backup/dhcpd.conf.TOL-3909 /etc/dhcp/dhcpd.conf
+----------------------------------------------------------------
+Change:
+
+cp /etc/dhcp/dhcpd.conf /etc/dhcp/backup/dhcpd.conf.01.07.2024
+cp /etc/dhcp/backup/dhcpd.conf.TOL-3909 /etc/dhcp/dhcpd.conf
+systemctl restart dhcpd
+----------------------------------------------------------------
+Post checks:
+
+systemctl status dhcpd
+systemctl status named 
+systemctl status postfix
+systemctl status tftpd
+diff /etc/dhcp/backup/dhcpd.conf.TOL-3909 /etc/dhcp/dhcpd.conf
+============================================================
+
+
+diff /etc/dhcp/backup/dhcpd.conf.TOL-3909 /etc/dhcp/backup/dhcpd.conf.01.07.2024
+diff /etc/dhcp/backup/dhcpd.conf.TOL-3909 /etc/dhcp/dhcpd.conf
+
+
+
+
+Login via root user on the Linux device. 
+
+Take backup of the file /etc/sysctl.conf on the same system and remote system(what I would prefer) in case of any OS issue.
+#
+
+cp /etc/sysctl.conf /home/puneet_kumar/sysctl.conf.IS-13916_122023
+------------------------------------------------------------
+Pre-checks:
+
+cat /proc/sys/vm/swappiness
+30
+grep -i swappiness /etc/sysctl.conf
+
+cat /etc/sysctl.conf
+-----------------------------------------
+vi /etc/sysctl.conf
+vm.swappiness = 10                              <- add this at the bottom of the file. 
+---------------------------------------------------------------------------
+sysctl -p            <- to make it reflect at the same time temporarily 
+but to make it persistent across the reboot, we need to reboot the system and it will be in effect after that.
+
+Coordinate with the application owner and reboot the device during downtime.
+[root@colonginx01v ~]#    init 6 or reboot
+
+
+
+Validation after reboot:
+
+
+[root@colonginx01v ~]# cat /proc/sys/vm/swappiness
+10
+[root@colonginx01v ~]# grep -i swappiness /etc/sysctl.conf
+vm.swappiness=10
+
+
+
+
+
+

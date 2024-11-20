@@ -1,0 +1,158 @@
+ 1004  vi mselect.wmt06024-a.symbotic   ===========>need to change serial no
+ 1005  rndc reload mselect.abs6621-a.symbotic
+ 1006  tail /var/log/messages
+ 1007  tail -n 100 /var/log/messages
+ 1008  nslookup  sectest02.wmt06024-a.symbotic
+ 1009  grep sectest02 mselect.wmt06024-a.symbotic
+ 1010  nslookup sectest02.mselect.wmt06024-a.symbotic
+ 
+ 
+cd /var/named/symbotic/
+ll mselect.abs6621-a.symbotic
+
+cp mselect.abs6621-a.symbotic /home/puneet_kumar/mselect.abs6621-a.symbotic.22APR
+ll /home/puneet_kumar/mselect.abs6621-a.symbotic.22APR
+rndc freeze mselect.abs6621-a.symbotic
+vi mselect.abs6621-a.symbotic
+
+bot-disconnect                         A       172.17.34.30
+
+===========================
+Reverse
+
+ll 34.17.172.in-addr.arpa
+cp 34.17.172.in-addr.arpa /home/puneet_kumar/34.17.172.in-addr.arpa.22APR
+ll /home/puneet_kumar/34.17.172.in-addr.arpa.22APR
+rndc freeze 34.17.172.in-addr.arpa
+vi 34.17.172.in-addr.arpa
+
+30                              PTR     bot-disconnect.mselect.abs6621-a.symbotic.
+rndc thaw 34.17.172.in-addr.arpa
+
+
+
+=================================================
+ rndc freeze mbot.abs6621-a.symbotic
+ 
+ 
+ 
+ 
+ 
+ 
+ ==============================
+ freeze
+ remvove entry
+ thaw
+ increase serial by 10
+ ==============================
+ 
+
+-->mnwi 
+
+=====================================================================
+MMN CCDEV01
+=====================================================================
+cd /var/named/symbotic/
+ll mselect.wmt06025-a.symbotic
+
+cp mselect.wmt06025-a.symbotic /home/puneet_kumar/mselect.wmt06025-a.symbotic.22APR
+ll /home/puneet_kumar/mselect.wmt06025-a.symbotic.22APR
+rndc freeze mselect.wmt06025-a.symbotic
+vi mselect.wmt06025-a.symbotic
+
+symw01                         A       172.17.34.29
+
+===========================
+Reverse
+
+ll 34.17.172.in-addr.arpa
+cp 34.17.172.in-addr.arpa /home/puneet_kumar/34.17.172.in-addr.arpa.22APR
+ll /home/puneet_kumar/34.17.172.in-addr.arpa.22APR
+rndc freeze 34.17.172.in-addr.arpa
+vi 34.17.172.in-addr.arpa
+
+29                              PTR     symw01.mselect.wmt06025-a.symbotic.
+rndc thaw 34.17.172.in-addr.arpa
+==========================================
+
+nslookup symw01.wmt06025-a.symbotic
+nslookup 172.17.34.29
+
+=====================================================================
+GROVE sectest02
+=====================================================================
+cd /var/named/symbotic/
+ll mselect.wmt06024-a.symbotic
+
+cp mselect.wmt06024-a.symbotic /home/puneet_kumar/mselect.wmt06024-a.symbotic.14dec
+ll /home/puneet_kumar/mselect.wmt06024-a.symbotic.14dec
+#rndc freeze mselect.wmt06024-a.symbotic
+vi mselect.wmt06024-a.symbotic
+
+sectest02                         A       172.17.36.56
+
+===========================
+Reverse
+
+ll 36.17.172.in-addr.arpa
+cp 36.17.172.in-addr.arpa /home/puneet_kumar/36.17.172.in-addr.arpa.24dec
+ll /home/puneet_kumar/36.17.172.in-addr.arpa.14dec
+rndc freeze 36.17.172.in-addr.arpa
+vi 36.17.172.in-addr.arpa
+
+56                              PTR     sectest02.mselect.wmt06024-a.symbotic.
+rndc thaw 36.17.172.in-addr.arpa
+==========================================
+
+nslookup sectest02.wmt06024-a.symbotic
+nslookup 172.17.36.56
+
+==============================================================
+GROVE CC09
+=====================================================================
+cd /var/named/symbotic/
+ll mselect.wmt06024-a.symbotic
+
+cp mselect.wmt06024-a.symbotic /home/puneet_kumar/mselect.wmt06024-a.symbotic.10dec
+ll /home/puneet_kumar/mselect.wmt06024-a.symbotic.10dec
+rndc freeze mselect.wmt06024-a.symbotic
+vi mselect.wmt06024-a.symbotic
+
+cc09                         A       172.17.36.55
+
+===========================
+Reverse
+
+ll 36.17.172.in-addr.arpa
+cp 36.17.172.in-addr.arpa /home/puneet_kumar/36.17.172.in-addr.arpa.10dec
+ll /home/puneet_kumar/36.17.172.in-addr.arpa.10dec
+rndc freeze 36.17.172.in-addr.arpa
+vi 36.17.172.in-addr.arpa
+
+55                              PTR     cc09.mselect.wmt06024-a.symbotic.
+rndc thaw 36.17.172.in-addr.arpa
+==========================================
+
+nslookup cc09.wmt06024-a.symbotic
+nslookup 172.17.36.55
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
