@@ -14,7 +14,7 @@ cp mselect.abs6621-a.symbotic /home/puneet_kumar/mselect.abs6621-a.symbotic.22AP
 ll /home/puneet_kumar/mselect.abs6621-a.symbotic.22APR
 rndc freeze mselect.abs6621-a.symbotic
 vi mselect.abs6621-a.symbotic
-
+   
 bot-disconnect                         A       172.17.34.30
 
 ===========================
