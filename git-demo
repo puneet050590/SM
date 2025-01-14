@@ -1,2 +1,7 @@
 hello test
+<<<<<<< HEAD
 update
+=======
+update
+test branch
+>>>>>>> 8e30a07d5ce76db602046967e836908a024e6304
